@@ -1,14 +1,13 @@
 'use strict';
 import React from 'react';
 import Avatar from './AvatarComponent';
-
 const ONE_MINUTE = 60;
 
 require('styles/ttmz/TimezoneList.scss');
 
 class TimezoneListComponent extends React.Component {
   calculateNow(timezone) {
-    let now         = new Date()
+    let now         = new Date(this.props.currentTime)
     let nowTimezone = now.getTimezoneOffset()*ONE_MINUTE;
 
     let partial     = timezone.split('(');
