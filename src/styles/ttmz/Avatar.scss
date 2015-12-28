@@ -1,0 +1,32 @@
+$avatar-size: 60px;
+
+.avatar-component {
+  text-align: center;
+  min-height: $avatar-size*1.5;
+  cursor: pointer;
+}
+
+.avatar-component__image {
+  height: $avatar-size;
+  background-size: cover;
+  border-radius: 50%;
+
+  box-shadow: 0px 0px $avatar-size 2px rgba(0,0,0,0.2);
+}
+.avatar-component__description {
+  width: $avatar-size;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.timezonelist-component__hours {
+  font-size: 10px;
+  display: block;
+}

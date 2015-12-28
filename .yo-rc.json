@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "teamtmz",
+    "style": "scss",
+    "postcss": false
+  }
+}
